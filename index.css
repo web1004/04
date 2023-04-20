@@ -1,0 +1,299 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+
+#reweb{
+	width:100%;
+	height:1100px;
+	background:url(image/donut.png) no-repeat -250px center #d4d2cc;   
+}
+.reweb_in{
+	position:relative;
+	width:1400px;
+	height:800px;
+	margin:0 auto;
+	box-shadow:0px 0px 120px rgba(0,0,0,0.8);
+	border-radius:20px;
+	box-sizing:border-box;
+}
+
+
+/*영역제목*/
+#reweb .reweb_title{
+	width:1300px;
+  height:100px;
+	margin:0 auto;
+	padding:50px 0 0 50px;
+}
+.reweb_title h2{ 
+	float:left;
+	font-family: 'Abril Fatface', cursive;
+	font-size:65px;
+	color:#333;
+	letter-spacing:2px;
+	margin-top:-16px;
+	margin-right:15px;
+}
+.reweb_title h3{ 
+	font-family: 'Raleway', sans-serif;
+	font-size:30px;
+	color:#555;
+}
+.reweb_title>p{
+	font-family:'Hind Madurai', sans-serif;
+	font-size:18px;
+	color:rgb(100, 99, 99);
+}
+
+
+/*왼쪽 텍스트영역___________________________*/
+
+.reweb_in .rtext{
+  width:300px;
+  height:100%;
+  float:left;
+	padding:20px 0 0 20px;
+  /* background:yellow */
+}
+.rtext h4{
+	font-family: 'Abril Fatface', cursive;
+	font-size:40px;
+	font-weight:100;
+	color:#333;
+	margin-bottom:25px;
+}
+.rtext h5{
+	font-family:'Hind Madurai', sans-serif;
+	font-size:17px;
+	font-weight:500;
+	color:#fff; /*bfa0c4*/
+	line-height:22px;
+	margin-bottom:25px;
+}
+.rtext .per{
+	text-align:center;
+	width:150px;
+	height:23px;
+	margin-bottom:20px;
+	padding:2px;
+	border:1px solid #555;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+.rtext .per>div{  /*->jQuery 에서 가로너비 100%*/
+	width:0;
+	height:100%;
+	background:#555;
+	line-height:17px;
+	border-radius:3px;
+}
+.rtext .per>div span{  /*->jQuery 에서 opacity:1*/
+	font-size:12px;
+	color:#f6f6f6;
+	opacity:0;
+}
+.rtext>p strong{color:#000;}
+.rtext>p{
+	color:#666;
+	font-size:15px;
+	line-height:20px;
+}
+.rtext .view_btn{margin-top:30px;}
+.rtext .view_btn li{
+	display:flex;
+	align-items:center;
+  justify-content:center;
+	width:100px;
+	height:25px;
+	border:1px solid #666;
+	padding:3px;
+	margin:10px 0;
+	color:#666;
+	font-weight:bold;
+	font-size:13px;
+}
+.rtext .view_btn li:hover{color:#fff;font-weight:bold;border:1px solid #fff;}
+
+
+.rtext .text_color{margin-top:30px;}
+.rtext .text_color li{
+	float:left;
+	width:15px;
+	height:15px;
+	background:transparent;
+	border-radius:50%;
+	margin:0 4px;
+}
+.rtext .text_color li:nth-child(1){
+	width:110px;
+	font-weight:400;
+	line-height:14px;
+	margin-bottom:5px;
+	margin-left:0;
+}
+.rtext .text_color li:nth-child(2){background:#6197a1;}
+.rtext .text_color li:nth-child(3){background:#916f95;}
+.rtext .text_color li:nth-child(4){background:#ebb2bb;}
+.rtext .text_color li:nth-child(5){background:#edce74;}
+.rtext .text_color li:nth-child(6){background:#a1ca92;}
+
+
+/*오른쪽 기기영역___________________________*/
+
+.reweb_in .device{
+  width:1000px;
+  height:100%;
+  float:right;
+  /* background:pink; */
+}
+
+/*각 기기별 배경화면 설정*/
+.device .pc{
+  position:absolute;
+	bottom:100px;
+	right:0px;
+	width:821px;
+	height:420px;
+	background:url(image/mockup_01.png) no-repeat 0 0;
+	background-size:cover;
+  transition:all 0.7s;
+	z-index:3;
+}
+.device .tablet{
+    position:absolute;
+	top:150px;
+	left:350px;
+	width:354px;
+	height:476px;
+	background:url(image/mockup_02.png) no-repeat 0 0;
+	background-size:cover;
+  transition:all 0.7s;
+	z-index:1;
+}
+.device .mobile{
+  position:absolute;
+	bottom:120px;
+	left:300px;
+	width:164px;
+	height:282px;
+	background:url(image/mockup_03.png) no-repeat 0 0;
+	background-size:cover;
+  transition:all 0.7s;
+	z-index:2;
+}
+
+
+/*각 기기별 보이는 이미지 설정*/
+.device .pc .pbg{
+  position:absolute;
+	top:30px;
+	left:140px;
+  z-index:4;
+	width:535px;
+	height:350px;
+	overflow:hidden;
+  background:url(image/pc_view.jpg) no-repeat 0 0;
+  background-size:100% auto;
+  transition:all 0.7s;
+  cursor:pointer;
+}
+.device .tablet .tbg{
+  position:absolute;
+	top:30px;
+	left:33px;
+  z-index:4;
+	width:290px;
+	height:387px;
+	overflow:hidden;
+  background:url(image/tablet_view.jpg) no-repeat 0 0;
+  background-size:100% auto;
+  transition:all 0.7s;
+  cursor:pointer;
+}
+.device .mobile .mbg{
+  position:absolute;
+	top:30px;
+	left:23px;
+  z-index:4;
+	width:113px;
+	height:200px;
+	overflow:hidden;
+  background:url(image/mobile_view.jpg) no-repeat 0 0;
+  background-size:100% auto;
+  transition:all 0.7s;
+  cursor:pointer;
+}
+
+
+/*위치이동&크기 버튼 설정*/
+.big_icon .icon{
+  font-size:32px;
+  color:#333;
+  cursor:pointer;
+}
+.big_icon .p_block{
+  position:absolute;
+  bottom:50px;
+	right:80px;
+}
+.big_icon .t_block{
+  position:absolute;
+  top:110px;
+	left:640px;
+}
+.big_icon .m_block{
+  position:absolute;
+  bottom:150px;
+	left:270px;
+}
+
+
+/* POPUP BOX */
+.pop{ /*검정배경*/
+	display:none; 
+	position:fixed; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100%; 
+	background:rgba(0,0,0,0.8); 
+	z-index:99999;
+	overflow:auto;
+}
+
+.c1{   /*태블릿용*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:800px; 
+	height:875px; 
+	background:url(image/tablet_view.png) no-repeat center center; 
+}
+.c1 iframe{
+	margin-top:47px;
+  margin-left: 17px;
+	border:none;
+}
+.c2{  /*모바일용*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:425px; 
+	height:727px; 
+	background:url(image/mobile_view.png) no-repeat center center; 
+}
+.c2 iframe{
+	margin-top:67px;
+  margin-left: 25px;
+	border:none;
+}
+.close{  /*닫기*/
+	position:fixed; 
+	right:30px; 
+	top:30px; 
+	color:#fff; 
+}
